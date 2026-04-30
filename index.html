@@ -1,1 +1,227 @@
-<h1> hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshMart Grocery Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* NAVBAR */
+nav {
+    background: #2e7d32;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1542838132-92c53300491e');
+    height: 60vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTION */
+section {
+    padding: 40px;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+}
+
+/* OFFER */
+.offer {
+    background: #ffcc80;
+    text-align: center;
+}
+
+/* ABOUT */
+.about {
+    background: #e8f5e9;
+}
+
+/* CONTACT */
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact button {
+    padding: 10px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>FreshMart</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#offer">Offer</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h1>Fresh Grocery Delivered</h1>
+    <p>Best quality fruits, vegetables & daily essentials</p>
+    <button>Shop Now</button>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+            <h3>Apples</h3>
+            <p>$2/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1582515073490-dc63a3fbd9e8">
+            <h3>Bananas</h3>
+            <p>$1/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+            <h3>Tomatoes</h3>
+            <p>$1.5/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+            <h3>Milk</h3>
+            <p>$0.9</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer" id="offer">
+    <h2>Special Offer 🎉</h2>
+    <p>Get 20% OFF on your first order!</p>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>Our Story</h2>
+    <p>
+        FreshMart started with a simple mission: deliver fresh groceries directly to your home.
+        We partner with local farmers to ensure quality and freshness.
+    </p>
+</section>
+
+<!-- ORDER / CART -->
+<section id="order">
+    <h2>Your Order</h2>
+    <p>Cart functionality coming soon (can be upgraded with JavaScript)</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send Message</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FreshMart Grocery Store</p>
+</footer>
+
+</body>
+</html>
